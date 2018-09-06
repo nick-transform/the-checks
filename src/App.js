@@ -1,39 +1,43 @@
 import React from 'react';
+import {BrowserRouter, Route, Switch} from "react-router-dom";
+import Layout from "./Components/Layout";
 
-import SamplePage from './Containers/SamplePage'
-import HowConfidentYouFeelPage from './Containers/HowConfidentYouFeelPage'
-import HowAreYouFeelingPage from './Containers/HowAreYouFeelingPage'
-import DoYouDrinkPage from './Containers/DoYouDrinkPage'
-import WhoDependsPage from './Containers/WhoDependsPage'
-import VegetablesPage from './Containers/VegetablesPage'
-import SampleNarrativePage from './Containers/SampleNarrativePage'
-import SortOfExercisePage from './Containers/SortOfExercisePage'
-import DrinksPage from './Containers/DrinksPage'
-import FinancialPrioritiesPage from './Containers/FinancialPrioritiesPage'
+import HowConfidentYouFeelPage from "./Containers/HowConfidentYouFeelPage";
+import HowAreYouFeelingPage from "./Containers/HowAreYouFeelingPage";
+import ApproachToTheFuture from "./Containers/ApproachToTheFuture";
+
+const HomePage = () => {
+  return (
+    <Layout currentPage={0} numPages={32} nextPagePath="/details">
+      <div>
+        <p>This is home page</p>
+      </div>
+    </Layout>
+  );
+};
+
+const DetailsForm = () => {
+  return (
+    <Layout currentPage={0} numPages={32} nextPagePath="/question1">
+      <div>
+        <p>user details page will come here</p>
+      </div>
+    </Layout>
+  );
+};
 
 export default function App() {
   return (
-    <div>
-      <SamplePage />
-      <hr />
-      <HowConfidentYouFeelPage />
-      <hr />
-      <HowAreYouFeelingPage />
-      <hr />
-      <WhoDependsPage />
-      <hr />
-      <VegetablesPage />
-      <hr />
-      <SampleNarrativePage />
-      <hr />
-      <SortOfExercisePage />
-      <hr />
-      <DoYouDrinkPage />
-      <hr />
-      <DrinksPage />
-      <hr />
-      <FinancialPrioritiesPage />
-    </div>
+      <BrowserRouter>
+        <Switch>
+          <Route exact path="/" strict component={HomePage} />
+          <Route path="/details" component={DetailsForm} />
+          <Route path="/question1" component={HowConfidentYouFeelPage} />
+          <Route path="/question2" component={HowAreYouFeelingPage} />
+          <Route path="/question3" component={ApproachToTheFuture} />
+          <Route component={HomePage} />
+        </Switch>
+      </BrowserRouter>
   );
 }
 

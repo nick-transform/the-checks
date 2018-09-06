@@ -4,7 +4,7 @@ import DHProgressBar from './DHProgressBar'
 import Header from './Header'
 import Footer from './Footer'
 
-export default ({ children, currentPage, numPages, pageTitle }) => (
+export default ({ children, currentPage, numPages, pageTitle, nextPagePath }) => (
     <div className="dh-layout container">
         <div className="row">
             <div className="col-xs-12">
@@ -17,6 +17,6 @@ export default ({ children, currentPage, numPages, pageTitle }) => (
                 {children}
             </div>
         </main>
-        <Footer />
+        <Footer routePath={nextPagePath}/>
     </div>
 )
