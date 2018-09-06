@@ -196,6 +196,39 @@
     }
 }
 
+.icon-siblings {
+    .dh-control-input__input {
+        // normal
+        & + .dh-control-input__text {
+            &:before {
+                background-image: url(../../images/icons/siblings.svg);
+            }
+        }
+
+        // normal checked
+        &:checked + .dh-control-input__text {
+            &:before {
+                background-image: url(../../images/icons/siblings-alt.svg);
+            }
+        }
+
+        // disabled
+        &:disabled {
+            & + .dh-control-input__text:before {
+                
+            }
+
+            &:checked + .dh-control-input__text:before {
+                
+            }
+        }
+    }
+
+    &.dh-quantity-selector__icon:before {
+        background-image: url(../../images/icons/siblings.svg);
+    }
+}
+
 .icon-community {
     .dh-control-input__input {
         // normal
@@ -674,16 +707,16 @@
             }
         }
 
-        // disabled
-        &:disabled {
-            & + .dh-control-input__text:before {
+        // // disabled
+        // &:disabled {
+        //     & + .dh-control-input__text:before {
                 
-            }
+        //     }
 
-            &:checked + .dh-control-input__text:before {
+        //     &:checked + .dh-control-input__text:before {
                 
-            }
-        }
+        //     }
+        // }
     }
 
     &.dh-quantity-selector__icon:before {
