@@ -8,6 +8,7 @@ import ApproachToTheFuture from "./Containers/ApproachToTheFuture";
 import WhoDependsPage from "./Containers/WhoDependsPage";
 import FirstNarrative from "./Containers/FirstNarrative";
 import Top3HealthProritiesPage from "./Containers/Top3HealthProritiesPage";
+import VegetablesPage from "./Containers/VegetablesPage";
 
 const HomePage = () => {
   return (
@@ -41,6 +42,7 @@ export default function App() {
           <Route path="/question4" component={WhoDependsPage} />
           <Route path="/narrative1" component={FirstNarrative} />
           <Route path="/question5" component={Top3HealthProritiesPage} />
+          <Route path="/question6" component={VegetablesPage} />
           <Route component={HomePage} />
         </Switch>
       </BrowserRouter>
