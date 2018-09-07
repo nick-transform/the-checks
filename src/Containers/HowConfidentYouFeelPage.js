@@ -9,7 +9,7 @@ export default function HowConfidentYouFeelPage () {
 
     const question = "Ok " + userName + ", let’s see how confident you’re feeling about…";
     return (
-        <Layout currentPage={1} numPages={32} nextPagePath="/question2">
+        <Layout currentPage={1} numPages={20} nextPagePath="/question2">
             <QuestionWithOption
             question={question}
             option=""

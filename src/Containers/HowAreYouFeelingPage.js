@@ -6,7 +6,7 @@ import DHSlider from '../Components/DHSlider'
 
 export default function HowAreYouFeelingPage () {
     return (
-        <Layout currentPage={2} numPages={32} nextPagePath="/question3">
+        <Layout currentPage={2} numPages={20} nextPagePath="/question3">
             <QuestionWithOption
             question="How are you feeling today?"
             option="Move the sliders to let us know"

@@ -5,10 +5,10 @@ import Layout from "./Components/Layout";
 import HowConfidentYouFeelPage from "./Containers/HowConfidentYouFeelPage";
 import HowAreYouFeelingPage from "./Containers/HowAreYouFeelingPage";
 import ApproachToTheFuture from "./Containers/ApproachToTheFuture";
-
+import WhoDependsPage from "./Containers/WhoDependsPage";
 const HomePage = () => {
   return (
-    <Layout currentPage={0} numPages={32} nextPagePath="/details">
+    <Layout currentPage={0} numPages={20} nextPagePath="/details">
       <div>
         <p>This is home page</p>
       </div>
@@ -18,7 +18,7 @@ const HomePage = () => {
 
 const DetailsForm = () => {
   return (
-    <Layout currentPage={0} numPages={32} nextPagePath="/question1">
+    <Layout currentPage={0} numPages={20} nextPagePath="/question1">
       <div>
         <p>user details page will come here</p>
       </div>
@@ -35,6 +35,7 @@ export default function App() {
           <Route path="/question1" component={HowConfidentYouFeelPage} />
           <Route path="/question2" component={HowAreYouFeelingPage} />
           <Route path="/question3" component={ApproachToTheFuture} />
+          <Route path="/question4" component={WhoDependsPage} />
           <Route component={HomePage} />
         </Switch>
       </BrowserRouter>

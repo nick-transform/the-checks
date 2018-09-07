@@ -38,7 +38,7 @@ export default function ApproachToTheFuture () {
     }];
 
     return (
-        <Layout currentPage={3} numPages={32} nextPagePath="/question4">
+        <Layout currentPage={3} numPages={20} nextPagePath="/question4">
             <QuestionWithOption
             question="What is your approach to the future?"
             option=""
