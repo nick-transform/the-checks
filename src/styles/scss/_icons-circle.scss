@@ -394,71 +394,15 @@
     }
 }
 
-.icon-existing-condition {
-    .dh-control-input__input {
-        // normal
-        & + .dh-control-input__text {
-            &:before {
-                background-image: url(../../images/icons/existing-condition.svg);
-            }
-        }
+@include Icon-circle(existing-condition);
 
-        // normal checked
-        &:checked + .dh-control-input__text {
-            &:before {
-                background-image: url(../../images/icons/existing-condition-alt.svg);
-            }
-        }
+@include Icon-circle(feel-younger);
 
-        // disabled
-        &:disabled {
-            & + .dh-control-input__text:before {
-                
-            }
+@include Icon-circle(shoulder-ache);
 
-            &:checked + .dh-control-input__text:before {
-                
-            }
-        }
-    }
+@include Icon-circle(staying-independent);
 
-    &.dh-quantity-selector__icon:before {
-        background-image: url(../../images/icons/existing-condition.svg);
-    }
-}
-
-.icon-feel-younger {
-    .dh-control-input__input {
-        // normal
-        & + .dh-control-input__text {
-            &:before {
-                background-image: url(../../images/icons/feel-younger.svg);
-            }
-        }
-
-        // normal checked
-        &:checked + .dh-control-input__text {
-            &:before {
-                background-image: url(../../images/icons/feel-younger-alt.svg);
-            }
-        }
-
-        // disabled
-        &:disabled {
-            & + .dh-control-input__text:before {
-                
-            }
-
-            &:checked + .dh-control-input__text:before {
-                
-            }
-        }
-    }
-
-    &.dh-quantity-selector__icon:before {
-        background-image: url(../../images/icons/feel-younger.svg);
-    }
-}
+@include Icon-circle(sharp-mind);
 
 .icon-grandkids {
     .dh-control-input__input {

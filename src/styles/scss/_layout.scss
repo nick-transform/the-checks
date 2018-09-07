@@ -1,5 +1,8 @@
 .dh-layout.container {
     @include AU-space( width, 46.5unit );
+    @include AU-space( padding-left, 2.5unit);
+    @include AU-space( padding-right, 2.5unit);
+    border: solid 1px #979797;
 }
 
 .narrow-content-wrapper {

@@ -6,6 +6,9 @@ import HowConfidentYouFeelPage from "./Containers/HowConfidentYouFeelPage";
 import HowAreYouFeelingPage from "./Containers/HowAreYouFeelingPage";
 import ApproachToTheFuture from "./Containers/ApproachToTheFuture";
 import WhoDependsPage from "./Containers/WhoDependsPage";
+import FirstNarrative from "./Containers/FirstNarrative";
+import Top3HealthProritiesPage from "./Containers/Top3HealthProritiesPage";
+
 const HomePage = () => {
   return (
     <Layout currentPage={0} numPages={20} nextPagePath="/details">
@@ -36,6 +39,8 @@ export default function App() {
           <Route path="/question2" component={HowAreYouFeelingPage} />
           <Route path="/question3" component={ApproachToTheFuture} />
           <Route path="/question4" component={WhoDependsPage} />
+          <Route path="/narrative1" component={FirstNarrative} />
+          <Route path="/question5" component={Top3HealthProritiesPage} />
           <Route component={HomePage} />
         </Switch>
       </BrowserRouter>

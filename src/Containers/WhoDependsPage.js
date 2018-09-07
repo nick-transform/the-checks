@@ -6,7 +6,7 @@ import {QuestionWithOption} from '../Components/QuestionOption'
 
 export default function WhoDependsPage () {
     return (
-        <Layout currentPage={4} numPages={20} nextPagePath="/question5">
+        <Layout currentPage={4} numPages={20} nextPagePath="/narrative1">
             <QuestionWithOption
             question="Who depends on you?"
             option="Pick as many as you like"
