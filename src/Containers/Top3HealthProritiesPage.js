@@ -4,7 +4,7 @@ import Layout from '../Components/Layout'
 import DHControlInput from '../Components/DHControlInput'
 import {QuestionWithOption} from '../Components/QuestionOption'
 
-export default function WhoDependsPage () {
+export default function Top3HealthProritiesPage () {
     return (
         <Layout currentPage={5} numPages={20} nextPagePath="/question6">
             <QuestionWithOption
