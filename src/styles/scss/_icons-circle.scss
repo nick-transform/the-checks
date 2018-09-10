@@ -66,39 +66,6 @@
     }
 }
 
-.icon-cheese {
-    .dh-control-input__input {
-        // normal
-        & + .dh-control-input__text {
-            &:before {
-                background-image: url(../../images/icons/cheese.svg);
-            }
-        }
-
-        // normal checked
-        &:checked + .dh-control-input__text {
-            &:before {
-                background-image: url(../../images/icons/cheese-alt.svg);
-            }
-        }
-
-        // disabled
-        &:disabled {
-            & + .dh-control-input__text:before {
-                
-            }
-
-            &:checked + .dh-control-input__text:before {
-                
-            }
-        }
-    }
-
-    &.dh-quantity-selector__icon:before {
-        background-image: url(../../images/icons/cheese.svg);
-    }
-}
-
 .icon-children {
     .dh-control-input__input {
         // normal
@@ -1043,6 +1010,17 @@
 @include Icon-circle('vegies');
 @include Icon-circle('cakes');
 @include Icon-circle('biscuits');
+
+@include Icon-circle('soft-drink');
+@include Icon-circle('tea-coffee');
+@include Icon-circle('water');
+@include Icon-circle('juice');
+@include Icon-circle('dietdrink');
+
+@include Icon-circle('yogurt');
+@include Icon-circle('cheese');
+@include Icon-circle('milk');
+@include Icon-circle('milk-alternatives');
 
 /*
 

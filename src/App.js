@@ -10,6 +10,10 @@ import FirstNarrative from "./Containers/FirstNarrative";
 import Top3HealthProritiesPage from "./Containers/Top3HealthProritiesPage";
 import VegetablesPage from "./Containers/VegetablesPage";
 import SnacksPage from "./Containers/SnacksPage";
+import FastFoodPage from "./Containers/FastFoodPage";
+import NonAlcoholicDrinkPage from "./Containers/NonAlcoholicDrinkPage";
+import DairyIntakePage from "./Containers/DairyIntakePage";
+
 
 const HomePage = () => {
   return (
@@ -45,6 +49,16 @@ export default function App() {
           <Route path="/question5" component={Top3HealthProritiesPage} />
           <Route path="/question6" component={VegetablesPage} />
           <Route path="/question7" component={SnacksPage} />
+          <Route path="/question8" component={FastFoodPage} />
+          <Route path="/question9" component={NonAlcoholicDrinkPage} />
+          <Route path="/question10" component={DairyIntakePage} />
+          {/* <Route path="/question11" component={NonAlcoholicDrinkPage} /> */}
+          {/* <Route path="/question12" component={NonAlcoholicDrinkPage} /> */}
+          {/* <Route path="/question13" component={NonAlcoholicDrinkPage} /> */}
+          {/* <Route path="/question14" component={NonAlcoholicDrinkPage} /> */}
+          {/* <Route path="/question15" component={NonAlcoholicDrinkPage} /> */}
+          {/* <Route path="/question16" component={NonAlcoholicDrinkPage} /> */}
+
           <Route component={HomePage} />
         </Switch>
       </BrowserRouter>
