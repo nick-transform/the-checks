@@ -18,7 +18,7 @@ import DrinksPage from "./Containers/DrinksPage";
 import SortOfExercisePage from "./Containers/SortOfExercisePage";
 import SmokePage from "./Containers/SmokePage";
 import DailyActivitiesPage from "./Containers/DailyActivitiesPage";
-
+import SecondNarrative from "./Containers/SecondNarrative";
 
 
 const HomePage = () => {
@@ -63,7 +63,7 @@ export default function App() {
           <Route path="/question13" component={SortOfExercisePage} />
           <Route path="/question14" component={SmokePage} />
           <Route path="/question15" component={DailyActivitiesPage} />
-          {/* <Route path="/question16" component={NonAlcoholicDrinkPage} /> */}
+          <Route path="/narrative2" component={SecondNarrative} />
 
           <Route component={HomePage} />
         </Switch>

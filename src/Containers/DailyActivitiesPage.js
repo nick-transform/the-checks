@@ -6,7 +6,7 @@ import {QuestionWithOption} from '../Components/QuestionOption'
 
 export default function DailyActivitiesPage () {
     return (
-        <Layout currentPage={15} numPages={20} nextPagePath="/question16">
+        <Layout currentPage={15} numPages={20} nextPagePath="/narrative2">
             <QuestionWithOption
             question="Do you need help with daily activities?"
             option="PICK AS MANY AS YOU LIKE"
