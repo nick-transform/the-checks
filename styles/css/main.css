@@ -1741,10 +1741,11 @@ textarea.au-text-input {
 .question-wrapper {
   font-family: OpenSans;
   font-size: 16px;
+  font-size: 1rem;
+  line-height: 1.5;
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
-  line-height: 1.5;
   letter-spacing: normal;
   text-align: center;
   color: #4a4a4a;
@@ -1763,7 +1764,12 @@ textarea.au-text-input {
 
 .dh-layout.container {
   width: 744px;
-  width: 46.5rem; }
+  width: 46.5rem;
+  padding-left: 40px;
+  padding-left: 2.5rem;
+  padding-right: 40px;
+  padding-right: 2.5rem;
+  border: solid 1px #979797; }
 
 .narrow-content-wrapper {
   width: 504px;
@@ -2224,15 +2230,6 @@ textarea.au-text-input {
 .icon-being-there-family.dh-quantity-selector__icon:before {
   background-image: url(../../images/icons/being-there-family.svg); }
 
-.icon-cheese .dh-control-input__input + .dh-control-input__text:before {
-  background-image: url(../../images/icons/cheese.svg); }
-
-.icon-cheese .dh-control-input__input:checked + .dh-control-input__text:before {
-  background-image: url(../../images/icons/cheese-alt.svg); }
-
-.icon-cheese.dh-quantity-selector__icon:before {
-  background-image: url(../../images/icons/cheese.svg); }
-
 .icon-children .dh-control-input__input + .dh-control-input__text:before {
   background-image: url(../../images/icons/children.svg); }
 
@@ -2250,6 +2247,15 @@ textarea.au-text-input {
 
 .icon-close-friends.dh-quantity-selector__icon:before {
   background-image: url(../../images/icons/close-friends.svg); }
+
+.icon-siblings .dh-control-input__input + .dh-control-input__text:before {
+  background-image: url(../../images/icons/siblings.svg); }
+
+.icon-siblings .dh-control-input__input:checked + .dh-control-input__text:before {
+  background-image: url(../../images/icons/siblings-alt.svg); }
+
+.icon-siblings.dh-quantity-selector__icon:before {
+  background-image: url(../../images/icons/siblings.svg); }
 
 .icon-community .dh-control-input__input + .dh-control-input__text:before {
   background-image: url(../../images/icons/community.svg); }
@@ -2313,6 +2319,33 @@ textarea.au-text-input {
 
 .icon-feel-younger.dh-quantity-selector__icon:before {
   background-image: url(../../images/icons/feel-younger.svg); }
+
+.icon-shoulder-ache .dh-control-input__input + .dh-control-input__text:before {
+  background-image: url(../../images/icons/shoulder-ache.svg); }
+
+.icon-shoulder-ache .dh-control-input__input:checked + .dh-control-input__text:before {
+  background-image: url(../../images/icons/shoulder-ache-alt.svg); }
+
+.icon-shoulder-ache.dh-quantity-selector__icon:before {
+  background-image: url(../../images/icons/shoulder-ache.svg); }
+
+.icon-staying-independent .dh-control-input__input + .dh-control-input__text:before {
+  background-image: url(../../images/icons/staying-independent.svg); }
+
+.icon-staying-independent .dh-control-input__input:checked + .dh-control-input__text:before {
+  background-image: url(../../images/icons/staying-independent-alt.svg); }
+
+.icon-staying-independent.dh-quantity-selector__icon:before {
+  background-image: url(../../images/icons/staying-independent.svg); }
+
+.icon-sharp-mind .dh-control-input__input + .dh-control-input__text:before {
+  background-image: url(../../images/icons/sharp-mind.svg); }
+
+.icon-sharp-mind .dh-control-input__input:checked + .dh-control-input__text:before {
+  background-image: url(../../images/icons/sharp-mind-alt.svg); }
+
+.icon-sharp-mind.dh-quantity-selector__icon:before {
+  background-image: url(../../images/icons/sharp-mind.svg); }
 
 .icon-grandkids .dh-control-input__input + .dh-control-input__text:before {
   background-image: url(../../images/icons/grandkids.svg); }
@@ -2503,40 +2536,290 @@ textarea.au-text-input {
 .icon-other.dh-quantity-selector__icon:before {
   background-image: url(../../images/icons/other.svg); }
 
-/*
+.icon-nuts .dh-control-input__input + .dh-control-input__text:before {
+  background-image: url(../../images/icons/nuts.svg); }
 
-template
+.icon-nuts .dh-control-input__input:checked + .dh-control-input__text:before {
+  background-image: url(../../images/icons/nuts-alt.svg); }
 
-.icon-tempicon {
-    .dh-control-input__input {
-        // normal
-        & + .dh-control-input__text {
-            &:before {
-                background-image: url(../../images/icons/tempicon.svg);
-            }
-        }
+.icon-nuts.dh-quantity-selector__icon:before {
+  background-image: url(../../images/icons/nuts.svg); }
 
-        // normal checked
-        &:checked + .dh-control-input__text {
-            &:before {
-                background-image: url(../../images/icons/tempicon-alt.svg);
-            }
-        }
+.icon-fresh-fruit .dh-control-input__input + .dh-control-input__text:before {
+  background-image: url(../../images/icons/fresh-fruit.svg); }
 
-        // disabled
-        &:disabled {
-            & + .dh-control-input__text:before {
-                
-            }
+.icon-fresh-fruit .dh-control-input__input:checked + .dh-control-input__text:before {
+  background-image: url(../../images/icons/fresh-fruit-alt.svg); }
 
-            &:checked + .dh-control-input__text:before {
-                
-            }
-        }
-    }
+.icon-fresh-fruit.dh-quantity-selector__icon:before {
+  background-image: url(../../images/icons/fresh-fruit.svg); }
 
-    &.dh-quantity-selector__icon:before {
-        background-image: url(../../images/icons/tempicon.svg);
-    }
-}
-*/
+.icon-chips .dh-control-input__input + .dh-control-input__text:before {
+  background-image: url(../../images/icons/chips.svg); }
+
+.icon-chips .dh-control-input__input:checked + .dh-control-input__text:before {
+  background-image: url(../../images/icons/chips-alt.svg); }
+
+.icon-chips.dh-quantity-selector__icon:before {
+  background-image: url(../../images/icons/chips.svg); }
+
+.icon-chocolate .dh-control-input__input + .dh-control-input__text:before {
+  background-image: url(../../images/icons/chocolate.svg); }
+
+.icon-chocolate .dh-control-input__input:checked + .dh-control-input__text:before {
+  background-image: url(../../images/icons/chocolate-alt.svg); }
+
+.icon-chocolate.dh-quantity-selector__icon:before {
+  background-image: url(../../images/icons/chocolate.svg); }
+
+.icon-pastries .dh-control-input__input + .dh-control-input__text:before {
+  background-image: url(../../images/icons/pastries.svg); }
+
+.icon-pastries .dh-control-input__input:checked + .dh-control-input__text:before {
+  background-image: url(../../images/icons/pastries-alt.svg); }
+
+.icon-pastries.dh-quantity-selector__icon:before {
+  background-image: url(../../images/icons/pastries.svg); }
+
+.icon-vegies .dh-control-input__input + .dh-control-input__text:before {
+  background-image: url(../../images/icons/vegies.svg); }
+
+.icon-vegies .dh-control-input__input:checked + .dh-control-input__text:before {
+  background-image: url(../../images/icons/vegies-alt.svg); }
+
+.icon-vegies.dh-quantity-selector__icon:before {
+  background-image: url(../../images/icons/vegies.svg); }
+
+.icon-cakes .dh-control-input__input + .dh-control-input__text:before {
+  background-image: url(../../images/icons/cakes.svg); }
+
+.icon-cakes .dh-control-input__input:checked + .dh-control-input__text:before {
+  background-image: url(../../images/icons/cakes-alt.svg); }
+
+.icon-cakes.dh-quantity-selector__icon:before {
+  background-image: url(../../images/icons/cakes.svg); }
+
+.icon-biscuits .dh-control-input__input + .dh-control-input__text:before {
+  background-image: url(../../images/icons/biscuits.svg); }
+
+.icon-biscuits .dh-control-input__input:checked + .dh-control-input__text:before {
+  background-image: url(../../images/icons/biscuits-alt.svg); }
+
+.icon-biscuits.dh-quantity-selector__icon:before {
+  background-image: url(../../images/icons/biscuits.svg); }
+
+.icon-soft-drink .dh-control-input__input + .dh-control-input__text:before {
+  background-image: url(../../images/icons/soft-drink.svg); }
+
+.icon-soft-drink .dh-control-input__input:checked + .dh-control-input__text:before {
+  background-image: url(../../images/icons/soft-drink-alt.svg); }
+
+.icon-soft-drink.dh-quantity-selector__icon:before {
+  background-image: url(../../images/icons/soft-drink.svg); }
+
+.icon-tea-coffee .dh-control-input__input + .dh-control-input__text:before {
+  background-image: url(../../images/icons/tea-coffee.svg); }
+
+.icon-tea-coffee .dh-control-input__input:checked + .dh-control-input__text:before {
+  background-image: url(../../images/icons/tea-coffee-alt.svg); }
+
+.icon-tea-coffee.dh-quantity-selector__icon:before {
+  background-image: url(../../images/icons/tea-coffee.svg); }
+
+.icon-water .dh-control-input__input + .dh-control-input__text:before {
+  background-image: url(../../images/icons/water.svg); }
+
+.icon-water .dh-control-input__input:checked + .dh-control-input__text:before {
+  background-image: url(../../images/icons/water-alt.svg); }
+
+.icon-water.dh-quantity-selector__icon:before {
+  background-image: url(../../images/icons/water.svg); }
+
+.icon-juice .dh-control-input__input + .dh-control-input__text:before {
+  background-image: url(../../images/icons/juice.svg); }
+
+.icon-juice .dh-control-input__input:checked + .dh-control-input__text:before {
+  background-image: url(../../images/icons/juice-alt.svg); }
+
+.icon-juice.dh-quantity-selector__icon:before {
+  background-image: url(../../images/icons/juice.svg); }
+
+.icon-dietdrink .dh-control-input__input + .dh-control-input__text:before {
+  background-image: url(../../images/icons/dietdrink.svg); }
+
+.icon-dietdrink .dh-control-input__input:checked + .dh-control-input__text:before {
+  background-image: url(../../images/icons/dietdrink-alt.svg); }
+
+.icon-dietdrink.dh-quantity-selector__icon:before {
+  background-image: url(../../images/icons/dietdrink.svg); }
+
+.icon-yogurt .dh-control-input__input + .dh-control-input__text:before {
+  background-image: url(../../images/icons/yogurt.svg); }
+
+.icon-yogurt .dh-control-input__input:checked + .dh-control-input__text:before {
+  background-image: url(../../images/icons/yogurt-alt.svg); }
+
+.icon-yogurt.dh-quantity-selector__icon:before {
+  background-image: url(../../images/icons/yogurt.svg); }
+
+.icon-cheese .dh-control-input__input + .dh-control-input__text:before {
+  background-image: url(../../images/icons/cheese.svg); }
+
+.icon-cheese .dh-control-input__input:checked + .dh-control-input__text:before {
+  background-image: url(../../images/icons/cheese-alt.svg); }
+
+.icon-cheese.dh-quantity-selector__icon:before {
+  background-image: url(../../images/icons/cheese.svg); }
+
+.icon-milk .dh-control-input__input + .dh-control-input__text:before {
+  background-image: url(../../images/icons/milk.svg); }
+
+.icon-milk .dh-control-input__input:checked + .dh-control-input__text:before {
+  background-image: url(../../images/icons/milk-alt.svg); }
+
+.icon-milk.dh-quantity-selector__icon:before {
+  background-image: url(../../images/icons/milk.svg); }
+
+.icon-milk-alternatives .dh-control-input__input + .dh-control-input__text:before {
+  background-image: url(../../images/icons/milk-alternatives.svg); }
+
+.icon-milk-alternatives .dh-control-input__input:checked + .dh-control-input__text:before {
+  background-image: url(../../images/icons/milk-alternatives-alt.svg); }
+
+.icon-milk-alternatives.dh-quantity-selector__icon:before {
+  background-image: url(../../images/icons/milk-alternatives.svg); }
+
+.icon-cigs-everday .dh-control-input__input + .dh-control-input__text:before {
+  background-image: url(../../images/icons/cigs-everday.svg); }
+
+.icon-cigs-everday .dh-control-input__input:checked + .dh-control-input__text:before {
+  background-image: url(../../images/icons/cigs-everday-alt.svg); }
+
+.icon-cigs-everday.dh-quantity-selector__icon:before {
+  background-image: url(../../images/icons/cigs-everday.svg); }
+
+.icon-cigs-not-everyday .dh-control-input__input + .dh-control-input__text:before {
+  background-image: url(../../images/icons/cigs-not-everyday.svg); }
+
+.icon-cigs-not-everyday .dh-control-input__input:checked + .dh-control-input__text:before {
+  background-image: url(../../images/icons/cigs-not-everyday-alt.svg); }
+
+.icon-cigs-not-everyday.dh-quantity-selector__icon:before {
+  background-image: url(../../images/icons/cigs-not-everyday.svg); }
+
+.icon-cigs-no-quit .dh-control-input__input + .dh-control-input__text:before {
+  background-image: url(../../images/icons/cigs-no-quit.svg); }
+
+.icon-cigs-no-quit .dh-control-input__input:checked + .dh-control-input__text:before {
+  background-image: url(../../images/icons/cigs-no-quit-alt.svg); }
+
+.icon-cigs-no-quit.dh-quantity-selector__icon:before {
+  background-image: url(../../images/icons/cigs-no-quit.svg); }
+
+.icon-cigs-never-have .dh-control-input__input + .dh-control-input__text:before {
+  background-image: url(../../images/icons/cigs-never-have.svg); }
+
+.icon-cigs-never-have .dh-control-input__input:checked + .dh-control-input__text:before {
+  background-image: url(../../images/icons/cigs-never-have-alt.svg); }
+
+.icon-cigs-never-have.dh-quantity-selector__icon:before {
+  background-image: url(../../images/icons/cigs-never-have.svg); }
+
+.icon-e-cigs .dh-control-input__input + .dh-control-input__text:before {
+  background-image: url(../../images/icons/e-cigs.svg); }
+
+.icon-e-cigs .dh-control-input__input:checked + .dh-control-input__text:before {
+  background-image: url(../../images/icons/e-cigs-alt.svg); }
+
+.icon-e-cigs.dh-quantity-selector__icon:before {
+  background-image: url(../../images/icons/e-cigs.svg); }
+
+.icon-cigs-occasionally .dh-control-input__input + .dh-control-input__text:before {
+  background-image: url(../../images/icons/cigs-occasionally.svg); }
+
+.icon-cigs-occasionally .dh-control-input__input:checked + .dh-control-input__text:before {
+  background-image: url(../../images/icons/cigs-occasionally-alt.svg); }
+
+.icon-cigs-occasionally.dh-quantity-selector__icon:before {
+  background-image: url(../../images/icons/cigs-occasionally.svg); }
+
+.icon-trying-quit .dh-control-input__input + .dh-control-input__text:before {
+  background-image: url(../../images/icons/trying-quit.svg); }
+
+.icon-trying-quit .dh-control-input__input:checked + .dh-control-input__text:before {
+  background-image: url(../../images/icons/trying-quit-alt.svg); }
+
+.icon-trying-quit.dh-quantity-selector__icon:before {
+  background-image: url(../../images/icons/trying-quit.svg); }
+
+.icon-transport .dh-control-input__input + .dh-control-input__text:before {
+  background-image: url(../../images/icons/transport.svg); }
+
+.icon-transport .dh-control-input__input:checked + .dh-control-input__text:before {
+  background-image: url(../../images/icons/transport-alt.svg); }
+
+.icon-transport.dh-quantity-selector__icon:before {
+  background-image: url(../../images/icons/transport.svg); }
+
+.icon-cooking .dh-control-input__input + .dh-control-input__text:before {
+  background-image: url(../../images/icons/cooking.svg); }
+
+.icon-cooking .dh-control-input__input:checked + .dh-control-input__text:before {
+  background-image: url(../../images/icons/cooking-alt.svg); }
+
+.icon-cooking.dh-quantity-selector__icon:before {
+  background-image: url(../../images/icons/cooking.svg); }
+
+.icon-cleaning .dh-control-input__input + .dh-control-input__text:before {
+  background-image: url(../../images/icons/cleaning.svg); }
+
+.icon-cleaning .dh-control-input__input:checked + .dh-control-input__text:before {
+  background-image: url(../../images/icons/cleaning-alt.svg); }
+
+.icon-cleaning.dh-quantity-selector__icon:before {
+  background-image: url(../../images/icons/cleaning.svg); }
+
+.icon-personal-care .dh-control-input__input + .dh-control-input__text:before {
+  background-image: url(../../images/icons/personal-care.svg); }
+
+.icon-personal-care .dh-control-input__input:checked + .dh-control-input__text:before {
+  background-image: url(../../images/icons/personal-care-alt.svg); }
+
+.icon-personal-care.dh-quantity-selector__icon:before {
+  background-image: url(../../images/icons/personal-care.svg); }
+
+.icon-mobility .dh-control-input__input + .dh-control-input__text:before {
+  background-image: url(../../images/icons/mobility.svg); }
+
+.icon-mobility .dh-control-input__input:checked + .dh-control-input__text:before {
+  background-image: url(../../images/icons/mobility-alt.svg); }
+
+.icon-mobility.dh-quantity-selector__icon:before {
+  background-image: url(../../images/icons/mobility.svg); }
+
+.icon-investments .dh-control-input__input + .dh-control-input__text:before {
+  background-image: url(../../images/icons/investments.svg); }
+
+.icon-investments .dh-control-input__input:checked + .dh-control-input__text:before {
+  background-image: url(../../images/icons/investments-alt.svg); }
+
+.icon-investments.dh-quantity-selector__icon:before {
+  background-image: url(../../images/icons/investments.svg); }
+
+.icon-shopping .dh-control-input__input + .dh-control-input__text:before {
+  background-image: url(../../images/icons/shopping.svg); }
+
+.icon-shopping .dh-control-input__input:checked + .dh-control-input__text:before {
+  background-image: url(../../images/icons/shopping-alt.svg); }
+
+.icon-shopping.dh-quantity-selector__icon:before {
+  background-image: url(../../images/icons/shopping.svg); }
+
+.icon-gardening .dh-control-input__input + .dh-control-input__text:before {
+  background-image: url(../../images/icons/gardening.svg); }
+
+.icon-gardening .dh-control-input__input:checked + .dh-control-input__text:before {
+  background-image: url(../../images/icons/gardening-alt.svg); }
+
+.icon-gardening.dh-quantity-selector__icon:before {
+  background-image: url(../../images/icons/gardening.svg); }
