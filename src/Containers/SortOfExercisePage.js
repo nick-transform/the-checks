@@ -6,7 +6,7 @@ import DHQuantitySelector from '../Components/DHQuantitySelector'
 
 export default function SortOfExercisePage () {
     return (
-        <Layout currentPage={28} numPages={32}>
+        <Layout currentPage={13} numPages={20} nextPagePath="/question14">
             <QuestionWithOption
             question="What sort of exercise do you do each week and how much?"
             option="Pick as many as you like"

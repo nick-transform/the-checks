@@ -13,6 +13,12 @@ import SnacksPage from "./Containers/SnacksPage";
 import FastFoodPage from "./Containers/FastFoodPage";
 import NonAlcoholicDrinkPage from "./Containers/NonAlcoholicDrinkPage";
 import DairyIntakePage from "./Containers/DairyIntakePage";
+import DoYouDrinkPage from "./Containers/DoYouDrinkPage";
+import DrinksPage from "./Containers/DrinksPage";
+import SortOfExercisePage from "./Containers/SortOfExercisePage";
+import SmokePage from "./Containers/SmokePage";
+import DailyActivitiesPage from "./Containers/DailyActivitiesPage";
+
 
 
 const HomePage = () => {
@@ -52,11 +58,11 @@ export default function App() {
           <Route path="/question8" component={FastFoodPage} />
           <Route path="/question9" component={NonAlcoholicDrinkPage} />
           <Route path="/question10" component={DairyIntakePage} />
-          {/* <Route path="/question11" component={NonAlcoholicDrinkPage} /> */}
-          {/* <Route path="/question12" component={NonAlcoholicDrinkPage} /> */}
-          {/* <Route path="/question13" component={NonAlcoholicDrinkPage} /> */}
-          {/* <Route path="/question14" component={NonAlcoholicDrinkPage} /> */}
-          {/* <Route path="/question15" component={NonAlcoholicDrinkPage} /> */}
+          <Route path="/question11" component={DoYouDrinkPage} />
+          <Route path="/question12" component={DrinksPage} />
+          <Route path="/question13" component={SortOfExercisePage} />
+          <Route path="/question14" component={SmokePage} />
+          <Route path="/question15" component={DailyActivitiesPage} />
           {/* <Route path="/question16" component={NonAlcoholicDrinkPage} /> */}
 
           <Route component={HomePage} />

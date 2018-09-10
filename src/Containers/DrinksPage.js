@@ -6,7 +6,7 @@ import DHQuantitySelector from '../Components/DHQuantitySelector'
 
 export default function DrinksPage () {
     return (
-        <Layout currentPage={26} numPages={32}>
+        <Layout currentPage={12} numPages={20} nextPagePath="/question13">
             <QuestionWithOption
             question="On the days you drink, how much do you have?"
             option=""
@@ -15,9 +15,9 @@ export default function DrinksPage () {
             <div className="row">
                 <div className="col-lg-12">
                     <div className="narrow-content-wrapper">
-                        <DHQuantitySelector icon="wine" iconLabel="Wine" unit="GLASSES" />
-                        <DHQuantitySelector icon="beer" iconLabel="Beer" unit="JUGS" />
-                        <DHQuantitySelector icon="spirits" iconLabel="Spirits" unit="CUPS" />
+                        <DHQuantitySelector icon="wine" iconLabel="Wine" unit="" />
+                        <DHQuantitySelector icon="beer" iconLabel="Beer" unit="" />
+                        <DHQuantitySelector icon="spirits" iconLabel="Spirits" unit="" />
                     </div> 
                 </div>
             </div>

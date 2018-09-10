@@ -1022,40 +1022,19 @@
 @include Icon-circle('milk');
 @include Icon-circle('milk-alternatives');
 
-/*
+@include Icon-circle('cigs-everday');
+@include Icon-circle('cigs-not-everyday');
+@include Icon-circle('cigs-no-quit');
+@include Icon-circle('cigs-never-have');
+@include Icon-circle('e-cigs');
+@include Icon-circle('cigs-occasionally');
+@include Icon-circle('trying-quit');
 
-template
-
-.icon-tempicon {
-    .dh-control-input__input {
-        // normal
-        & + .dh-control-input__text {
-            &:before {
-                background-image: url(../../images/icons/tempicon.svg);
-            }
-        }
-
-        // normal checked
-        &:checked + .dh-control-input__text {
-            &:before {
-                background-image: url(../../images/icons/tempicon-alt.svg);
-            }
-        }
-
-        // disabled
-        &:disabled {
-            & + .dh-control-input__text:before {
-                
-            }
-
-            &:checked + .dh-control-input__text:before {
-                
-            }
-        }
-    }
-
-    &.dh-quantity-selector__icon:before {
-        background-image: url(../../images/icons/tempicon.svg);
-    }
-}
-*/
+@include Icon-circle('transport');
+@include Icon-circle('cooking');
+@include Icon-circle('cleaning');
+@include Icon-circle('personal-care');
+@include Icon-circle('mobility');
+@include Icon-circle('investments');
+@include Icon-circle('shopping');
+@include Icon-circle('gardening');
