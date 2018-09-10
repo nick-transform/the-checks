@@ -19,6 +19,11 @@ import SortOfExercisePage from "./Containers/SortOfExercisePage";
 import SmokePage from "./Containers/SmokePage";
 import DailyActivitiesPage from "./Containers/DailyActivitiesPage";
 import SecondNarrative from "./Containers/SecondNarrative";
+import MoneyPage from "./Containers/MoneyPage";
+import FinancialPrioritiesPage from "./Containers/FinancialPrioritiesPage";
+import BudgetPage from "./Containers/BudgetPage";
+import WorkArrangementPage from "./Containers/WorkArrangementPage";
+import WorkStatusPage from "./Containers/WorkStatusPage";
 
 
 const HomePage = () => {
@@ -64,6 +69,17 @@ export default function App() {
           <Route path="/question14" component={SmokePage} />
           <Route path="/question15" component={DailyActivitiesPage} />
           <Route path="/narrative2" component={SecondNarrative} />
+          <Route path="/question16" component={MoneyPage} />
+          <Route path="/question17" component={FinancialPrioritiesPage} />
+          <Route path="/question18" component={BudgetPage} />
+          <Route path="/question19" component={WorkArrangementPage} />
+          <Route path="/question20" component={WorkStatusPage} />
+          {/* <Route path="/question17" component={FinancialPrioritiesPage} /> */}
+          {/* <Route path="/question17" component={FinancialPrioritiesPage} /> */}
+          {/* <Route path="/question17" component={FinancialPrioritiesPage} /> */}
+          {/* <Route path="/question17" component={FinancialPrioritiesPage} /> */}
+
+
 
           <Route component={HomePage} />
         </Switch>

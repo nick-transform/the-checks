@@ -6,7 +6,7 @@ import {QuestionWithOption} from '../Components/QuestionOption'
 
 export default function FinancialPrioritiesPage () {
     return (
-        <Layout currentPage={12} numPages={32}>
+        <Layout currentPage={17} numPages={20} nextPagePath="/question18">
             <QuestionWithOption
             question="What are your financial priorities?"
             option="Pick as many as you like"
