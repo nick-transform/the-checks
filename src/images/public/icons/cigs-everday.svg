@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120">
+    <g fill="none" fill-rule="evenodd">
+        <text fill="#4A4A4A" font-family="OpenSans, Open Sans" font-size="22" transform="translate(-153 -158)">
+            <tspan x="109.534" y="129.947">Do you smoke, including roll-your-own or cigars?</tspan>
+        </text>
+        <g>
+            <circle cx="60" cy="60" r="57.5" fill="#FFF" stroke="#000" stroke-width="5"/>
+            <path fill="#000" fill-rule="nonzero" d="M75.742 37.266v7.97s.119 2.236-3.788 2.236H60 48.047c-3.906 0-3.787-2.236-3.787-2.236v-7.97c0-1.58-1.257-2.11-2.404-2.266H40v56h40V35h-1.856c-1.147.157-2.402.685-2.402 2.266z"/>
+            <path stroke="#000" stroke-width="1.419" d="M41 28h6v22h-6z"/>
+            <path stroke="#000" stroke-width="1.419" d="M46 28h6v22h-6zM52 28h6v22h-6z"/>
+            <path stroke="#000" stroke-width=".941" d="M58 19h5v31h-5z"/>
+            <path stroke="#000" d="M62 13h6v37h-6z"/>
+            <path stroke="#000" stroke-width=".971" d="M68 22h5v27h-5z"/>
+            <path stroke="#000" stroke-width="1.419" d="M73 28h6v22h-6z"/>
+            <path stroke="#000" stroke-width=".941" d="M58 34s1.83.927 5 0M62 28s1.83.927 5 0M52 42s1.83.926 5 0M41 42s1.83.926 5 0M47 42s1.83.926 5 0M68 37s1.83.926 5 0M74 42s1.83.926 5 0"/>
+            <path fill="#000" fill-rule="nonzero" stroke="#FFF" d="M40 51h40"/>
+        </g>
+    </g>
+</svg>
