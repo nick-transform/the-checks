@@ -1,0 +1,34 @@
+@mixin Icon-circle ($name) {
+    .icon-#{$name} {
+        .dh-control-input__input {
+            // normal
+            & + .dh-control-input__text {
+                &:before {
+                    background-image: url(../../images/icons/#{$name}.svg);
+                }
+            }
+    
+            // normal checked
+            &:checked + .dh-control-input__text {
+                &:before {
+                    background-image: url(../../images/icons/#{$name}-alt.svg);
+                }
+            }
+    
+            // disabled
+            &:disabled {
+                & + .dh-control-input__text:before {
+                    
+                }
+    
+                &:checked + .dh-control-input__text:before {
+                    
+                }
+            }
+        }
+    
+        &.dh-quantity-selector__icon:before {
+            background-image: url(../../images/icons/#{$name}.svg);
+        }
+    }
+}

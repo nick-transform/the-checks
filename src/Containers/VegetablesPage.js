@@ -6,7 +6,7 @@ import {QuestionWithOption} from '../Components/QuestionOption'
 
 export default function VegetablesPage () {
     return (
-        <Layout currentPage={20} numPages={32}>
+        <Layout currentPage={6} numPages={20} nextPagePath="question7">
             <QuestionWithOption
             question="How many serves of vegetables do you eat each day?"
             option="1 serve = &frac12; cup cooked or 1 cup salad vegetables"
