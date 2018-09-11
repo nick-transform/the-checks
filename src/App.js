@@ -1,7 +1,8 @@
 import React from 'react';
 import {BrowserRouter, Route, Switch} from "react-router-dom";
-import Layout from "./Components/Layout";
 
+import GetStartedPage from "./Containers/GetStartedPage";
+import UserDetailPage from "./Containers/UserDetailPage";
 import HowConfidentYouFeelPage from "./Containers/HowConfidentYouFeelPage";
 import HowAreYouFeelingPage from "./Containers/HowAreYouFeelingPage";
 import ApproachToTheFuturePage from "./Containers/ApproachToTheFuturePage";
@@ -29,33 +30,14 @@ import ThirdNarrative from "./Containers/ThirdNarrative";
 import FamilyFriendsContactPage from "./Containers/FamilyFriendsContactPage";
 import SocialActivePage from "./Containers/SocialActivePage";
 import FourthNarrative from "./Containers/FourthNarrative";
-
-const HomePage = () => {
-  return (
-    <Layout currentPage={0} numPages={20} nextPagePath="/details">
-      <div>
-        <p>This is home page</p>
-      </div>
-    </Layout>
-  );
-};
-
-const DetailsForm = () => {
-  return (
-    <Layout currentPage={0} numPages={20} nextPagePath="/question1">
-      <div>
-        <p>user details page will come here</p>
-      </div>
-    </Layout>
-  );
-};
+import ErrorPage from "./Containers/ErrorPage";
 
 export default function App() {
   return (
       <BrowserRouter>
         <Switch>
-          <Route exact path="/" strict component={HomePage} />
-          <Route path="/details" component={DetailsForm} />
+          <Route exact path="/" strict component={GetStartedPage} />
+          <Route path="/details" component={UserDetailPage} />
           <Route path="/question1" component={HowConfidentYouFeelPage} />
           <Route path="/question2" component={HowAreYouFeelingPage} />
           <Route path="/question3" component={ApproachToTheFuturePage} />
@@ -85,7 +67,7 @@ export default function App() {
           <Route path="/narrative4" component={FourthNarrative} />
 
 
-          <Route component={HomePage} />
+          <Route component={ErrorPage} />
         </Switch>
       </BrowserRouter>
   );
