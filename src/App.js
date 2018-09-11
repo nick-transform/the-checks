@@ -24,7 +24,9 @@ import FinancialPrioritiesPage from "./Containers/FinancialPrioritiesPage";
 import BudgetPage from "./Containers/BudgetPage";
 import WorkArrangementPage from "./Containers/WorkArrangementPage";
 import WorkStatusPage from "./Containers/WorkStatusPage";
-
+import WorkSituationPage from "./Containers/WorkSituationPage";
+import ThirdNarrative from "./Containers/ThirdNarrative";
+import FamilyFriendsContactPage from "./Containers/FamilyFriendsContactPage";
 
 const HomePage = () => {
   return (
@@ -74,10 +76,10 @@ export default function App() {
           <Route path="/question18" component={BudgetPage} />
           <Route path="/question19" component={WorkArrangementPage} />
           <Route path="/question20" component={WorkStatusPage} />
-          {/* <Route path="/question17" component={FinancialPrioritiesPage} /> */}
-          {/* <Route path="/question17" component={FinancialPrioritiesPage} /> */}
-          {/* <Route path="/question17" component={FinancialPrioritiesPage} /> */}
-          {/* <Route path="/question17" component={FinancialPrioritiesPage} /> */}
+          <Route path="/question21" component={WorkSituationPage} />
+          <Route path="/narrative3" component={ThirdNarrative} />
+          <Route path="/question22" component={FamilyFriendsContactPage} />
+          {/* <Route path="/question23" component={FinancialPrioritiesPage} /> */}
 
 
 
