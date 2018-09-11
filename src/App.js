@@ -27,6 +27,8 @@ import WorkStatusPage from "./Containers/WorkStatusPage";
 import WorkSituationPage from "./Containers/WorkSituationPage";
 import ThirdNarrative from "./Containers/ThirdNarrative";
 import FamilyFriendsContactPage from "./Containers/FamilyFriendsContactPage";
+import SocialActivePage from "./Containers/SocialActivePage";
+import FourthNarrative from "./Containers/FourthNarrative";
 
 const HomePage = () => {
   return (
@@ -79,8 +81,8 @@ export default function App() {
           <Route path="/question21" component={WorkSituationPage} />
           <Route path="/narrative3" component={ThirdNarrative} />
           <Route path="/question22" component={FamilyFriendsContactPage} />
-          {/* <Route path="/question23" component={FinancialPrioritiesPage} /> */}
-
+          <Route path="/question23" component={SocialActivePage} />
+          <Route path="/narrative4" component={FourthNarrative} />
 
 
           <Route component={HomePage} />
