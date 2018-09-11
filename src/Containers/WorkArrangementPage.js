@@ -52,9 +52,9 @@ export default function WorkArrangementPage () {
         value: "Unable to work due to illness or disability"
     },
     {
-        label: "I\'ve been retrenched or made redundant",
+        label: "I've been retrenched or made redundant",
         name: 'name',
-        value: "I\'ve been retrenched or made redundant"
+        value: "I've been retrenched or made redundant"
     },
     {
         label: "Unpaid work such as parent, carer or volunteer",

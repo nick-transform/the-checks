@@ -37,9 +37,9 @@ export default function WorkSituationPage () {
         value: "Learn something new and interesting"
     },
     {
-        label: "I want to do someting but I\'m not sure what",
+        label: "I want to do someting but I'm not sure what",
         name: 'name',
-        value: "I want to do someting but I\'m not sure what"
+        value: "I want to do someting but I'm not sure what"
     },
     {
         label: "Retired",
